@@ -1,1 +1,1 @@
-# remote-jobs-searcher
+# remote-jobs-notifier
