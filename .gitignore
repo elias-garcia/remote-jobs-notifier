@@ -1,12 +1,9 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# GCP Credentials
+.gcp-credentials.json
 
-# Test binary, build with `go test -c`
-*.test
+# Local .terraform directories
+**/.terraform/*
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# .tfstate files
+*.tfstate
+*.tfstate.*
