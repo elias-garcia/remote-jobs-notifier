@@ -2,8 +2,17 @@
 .gcp-credentials.json
 
 # Local .terraform directories
-**/.terraform/*
+**/.terraform
 
 # .tfstate files
 *.tfstate
 *.tfstate.*
+
+# node_modules
+**/node_modules
+
+# package-lock.json
+**/package-lock.json
+
+# dist dirs
+**/dist
