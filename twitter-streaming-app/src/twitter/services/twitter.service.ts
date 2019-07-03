@@ -1,4 +1,5 @@
 import Axios from "axios";
+import { SearchResponse } from "..";
 import { AuthResponse } from "../interfaces/auth-response.interface";
 import { TwitterConfig } from "../interfaces/twitter-config.interface";
 
@@ -10,19 +11,21 @@ export class TwitterService {
   private readonly TWITTER_API_TWEETS_RESOURCE = "search/tweets.json";
   private readonly TWITTER_API_GRANT_TYPE = "client_credentials";
   private readonly TWITTER_API_CREDENTIALS_ENCODING = "base64";
+  private readonly TWITTER_API_TWEET_MODE = "extended";
 
   constructor(private config: TwitterConfig) { }
 
-  public async getTweets(usersData: string[]): Promise<any> {
+  public async getTweets(usersData: string[]): Promise<SearchResponse> {
     try {
       const bearerToken = await this.getAuthenticationToken();
-      const res = await Axios.request<any>({
+      const res = await Axios.request<SearchResponse>({
         headers: {
           Authorization: `Bearer ${bearerToken}`,
         },
         method: "GET",
         params: {
           q: this.buildSearchQuery(usersData),
+          tweet_mode: this.TWITTER_API_TWEET_MODE,
         },
         url: `${this.getTwitterTweetsApiUrl(this.TWITTER_API_TWEETS_RESOURCE)}`,
       });
