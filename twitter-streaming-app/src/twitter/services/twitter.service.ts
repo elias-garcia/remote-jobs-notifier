@@ -64,7 +64,7 @@ export class TwitterService {
     usersData.forEach((user: string, i: number) => {
       query += (i > 0) ? ` OR from:${user}` : `from:${user}`;
     });
-    console.log(query);
+
     return query;
   }
 
