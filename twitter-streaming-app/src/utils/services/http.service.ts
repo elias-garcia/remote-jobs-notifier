@@ -1,11 +1,9 @@
-import { RequestOptions, IncomingMessage, request } from "http";
+import { IncomingMessage, request, RequestOptions } from "http";
 import { IncomingMessageEvent } from "../enums/incoming-message-event.enum";
 
 const FIRST_HTTP_ERROR_CODE = 400;
 
 export class HttpService {
-
-  constructor() { }
 
   public request(options: RequestOptions, data?): Promise<unknown> {
     return new Promise((resolve, reject) => {

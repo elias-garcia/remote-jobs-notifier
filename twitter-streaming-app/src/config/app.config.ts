@@ -3,5 +3,5 @@ export const appConfig = {
   twitter: {
     apiKey: process.env.TWITTER_API_KEY,
     apiSecretKey: process.env.TWITTER_API_SECRET_KEY,
-  }
-}
+  },
+};

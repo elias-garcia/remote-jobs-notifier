@@ -1,5 +1,5 @@
-import { TwitterConfig } from "../interfaces/twitter-config.interface";
 import { HttpService } from "../../utils";
+import { TwitterConfig } from "../interfaces/twitter-config.interface";
 
 export class TwitterService {
 
