@@ -4,8 +4,8 @@
     "interface-name": false,
     "max-line-length": [
       true,
-      90
+      120
     ],
-    "no-console": false,
+    "no-console": false
   }
 }
