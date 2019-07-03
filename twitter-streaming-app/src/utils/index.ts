@@ -1,5 +1,5 @@
-import { HttpClientService } from "./services/http-client.service";
+import { HttpService } from "./services/http.service";
 
 export {
-  HttpClientService
+  HttpService
 };

@@ -3,7 +3,7 @@ import { IncomingMessageEvent } from "../enums/incoming-message-event.enum";
 
 const FIRST_HTTP_ERROR_CODE = 400;
 
-export class HttpClientService {
+export class HttpService {
 
   constructor() { }
 

@@ -1,6 +1,9 @@
 # GCP Credentials
 .gcp-credentials.json
 
+# Env vars
+**/.env
+
 # Local .terraform directories
 **/.terraform
 
